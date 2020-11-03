@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+
+    <!-- 폰트 -->
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+
+    <!-- 자바스크립트 플러그인 -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <!-- 사용자 CSS -->
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- 사용자 자바스크립트 -->
+    <script src="./js/main.js"></script>
+
+    <!-- 콘텐츠8 슬라이더 -->
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+  ></script>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- 비주얼 -->
+    <link rel="stylesheet" type="text/css" href="./css/visual.css">
+    <title>CAFE DROPTOP</title>
+</head>
+<body>
+    
+    <div id="wrap">
+        <section id="top">
+            <div class="top_wrap">
+                <ul>
+                    <li><a href="#">Sign In</a>
+                        <span>｜</span></li>
+                    <li><a href="#">My DROPTOP</a>
+                        <span>｜</span></li>
+                    <li><a href="#">Customer Service</a>
+                        <span>｜</span></li>
+                    <li><a href="#">Find a Store</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <header>
+            <div class="header_container">
+                <div class="top_logo">
+                    <a href="./index.html"><img src="./img/top_logo.png" alt="top logo"></a>
+                </div>
+
+                <nav>
+                    <ul class="depth1">
+                        <li><a href="./sub1_1.html">ABOUT</a>
+                            <ul class="depth2">
+                                <li><a href="./sub1_1.html">DROPTOP Story</a></li>
+                                <li><a href="#">DROPTOP M Story</a></li>
+                                <li><a href="#">DROPTOP Coffee</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li><a href="./sub2_1.html">MENU</a>
+                            <ul class="depth2">
+                                <li><a href="./sub2_1.html"><b>DROPTOP</b></a></li>
+                                <li><a href="./sub2_1.html">&nbsp;&nbsp;New</a></li>
+                                <li><a href="#">&nbsp;&nbsp;Coffee</a></li>
+                                <li><a href="#">&nbsp;&nbsp;Beverage & Tea</a></li>
+                                <li><a href="#">&nbsp;&nbsp;Food</a></li>
+                                <li><a href="#"><b>DROPTOP M</b></a></li>
+                                <li><a href="#">&nbsp;&nbsp;Coffee</a></li>
+                                <li><a href="#">&nbsp;&nbsp;Beverage & Tea</a></li>
+                                <li><a href="#">&nbsp;&nbsp;Deli</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="./sub3_1.html">STORE</a>
+                            <ul class="depth2">
+                                <li><a href="./sub3_1.html">매장찾기</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#">FRANCHISE</a>
+                            <ul class="depth2">
+                                <li><a href="#">창업안내</a></li>
+                                <li><a href="#">창업설명회</a></li>
+                                <li><a href="#">가맹상담</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#">EVENT</a>
+                            <ul class="depth2">
+                                <li><a href="#">이벤트소식</a></li>
+                                <li><a href="#">당첨자발표</a></li>
+                                <li><a href="#">제휴카드</a></li>
+                                <li><a href="#">모바일쿠폰</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#">COMMUNITY</a>
+                            <ul class="depth2">
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">보도자료</a></li>
+                                <li><a href="#">제작지원</a></li>
+                                <li><a href="#">멀티미디어</a></li>
+                                <li><a href="#">고객센터</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section id="visual">
+            <div class="visual_wrap">
+                <section id="container">
+                    <!-- <div class="arrow prev" onclick = "prevNext(-1)">&#10094;</div>
+                    <div class="arrow next" onclick = "prevNext(1)">&#10095;</div> -->
+                
+                    <div class="slideNum">
+                        <span id="thisSlide">0</span> / <span id="allSlide">0</span>
+                    </div>
+                
+                    <article class="slides">       
+                            <img src="./img/그룹 145.png" alt="1">
+                    </article><!--1-->
+
+                    <article class="slides">
+                        <img src="./img/그룹 144.png" alt="">
+                    </article><!--2-->
+
+                    <article class="slides">
+                        <img src="./img/그룹 146.png" alt="">
+                    </article><!--3-->
+                </section><!-- } container-->
+                
+                <!--pager {-->
+                <section id="pager">
+                    <span class="dots on" onclick="currentSlide(1)"></span>
+                    &nbsp; <span class="dots" onclick="currentSlide(2)"></span>
+                    &nbsp; <span class="dots" onclick="currentSlide(3)"></span>
+                </section><!--pager }-->
+            </div>
+          </section>
+          <script src="./js/slide.js"></script>
+
+        <section id="section1">
+            <div class="section1_wrap">
+                <div class="s1">
+                    <div>
+                        <ul>
+                            <li>Serch a Store</li>
+                            <li>가까운 드롭탑 매장을 <br> 찾아보세요.</li>
+                            <li><input type="button" value="SEARCH"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="s2">
+                    <div>
+                        <ul>
+                            <li>Our News</li>
+                            <li>드롭탑의 새로운 소식을 <br>
+                                둘러보세요.</li>
+                            <li><input type="button" value="VIEW"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section2">
+            <div class="section2_wrap">
+                <div class="section2_1">
+                    <ul>
+                        <li>The DROPTOP's Power Offer</li>
+                        <li>TASTE · PLACE · SERVICE</li>
+                        <li>최고의 맛, 장소, 서비스를 선사하기 위해 드롭탑은 <br>
+                        파워오퍼라는 가치를 전 매장에서 실현합니다.</li>
+                    </ul>
+                </div>
+
+                <div class="section2_2">
+                    <ul>
+                        <li><img src="./img/content2 (1).png" alt="">
+                            <ul>
+                                <li>20g Beans</li>
+                            </ul>
+                        </li>
+
+                        <li><img src="./img/content2 (2).png" alt="">
+                            <ul>
+                                <li>925 Blending</li>
+                            </ul>
+                        </li>
+
+                        <li><img src="./img/content2 (3).png" alt="">
+                            <ul>
+                                <li>Modern & Vintage</li>
+                            </ul>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="section3">
+            <div class="section3_wrap">
+                <div class="section3_1">
+                    <ul>
+                        <li>Discover Our <span>New</span></li>
+                        <li>엄선한 에스프레소와 체계화된 레시피 준수로  최고의 맛을 제공합니다. <br>
+                            최상의 커피, 편안한 공간, 행복한 미소로 고객 감동을 드리겠습니다.</li>
+                        <li>we are a truly concerned about the health and lives of our customers with <br> top quality products. Our top priority is to protect the health of our <br> customers with the best taste.</li>
+                        <li><input type="button" value="VIEW MORE"></li>
+                    </ul>
+                </div>
+
+                <div class="section3_2">
+                    <div>
+                        <ul>
+                            <li><img src="./img/content3 (1).png" alt=""></li>
+                            <li>925 블랙 클라우드</li>
+                            <li>925 Black Cloud</li>
+                            <li><input type="button" value="DETAIL MORE"></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <ul>
+                            <li><img src="./img/content3 (2).png" alt=""></li>
+                            <li>달고넛 콜드브루 라떼</li>
+                            <li>Dalgonut Coldbrew Latte</li>
+                            <li><input type="button" value="DETAIL MORE"></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <ul>
+                            <li><img src="./img/content3 (3).png" alt=""></li>
+                            <li>연유 콜드브루 라떼</li>
+                            <li>Condensed Milk Coldbrew Latte</li>
+                            <li><input type="button" value="DETAIL MORE"></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <ul>
+                            <li><img src="./img/content3 (4).png" alt=""></li>
+                            <li>흑임자 카페라떼</li>
+                            <li>Black Sesame Cafelatte</li>
+                            <li><input type="button" value="DETAIL MORE"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section4">
+            <div class="section4_wrap">
+                 <div class="section4_1">
+                    <ul>
+                        <li><img src="./img/title.png" alt=""></li>
+                        <li>925 Blend Kit</li>
+                        <li>드롭탑 925커피는 전문 Q그레이더가 925번 블렌딩 테스트를 하여 <br>
+                            탄생한 걸작입니다. 925블렌드를 통해 커피의 새로운 세계를 경험해보세요.</li>
+                    </ul>
+                 </div>
+
+                 <div class="section4_2">
+                     <div>
+                         <ul>
+                             <li><img src="./img/content4 (1).png" alt=""></li>
+                             <li>드롭탑 925 레드 블렌드</li>
+                             <li>Droptop 925Red Blend</li>
+                         </ul>
+                     </div>
+                     <div>
+                         <ul>
+                             <li><img src="./img/content4 (2).png" alt=""></li>
+                             <li>드롭탑 925 블랙 블렌드</li>
+                             <li>Droptop 925Black Blend</li>
+                         </ul>
+                     </div>
+                     <div>
+                         <ul>
+                             <li><img src="./img/content4 (3).png" alt=""></li>
+                             <li>드롭탑 925 스페셜티 마일드</li>
+                             <li>Droptop 925 Specialty Mild</li>
+                         </ul>
+                     </div>
+                     <div>
+                         <ul>
+                             <li><img src="./img/content4 (4).png" alt=""></li>
+                             <li>드롭탑 925 스페셜티 다크 
+                            </li>
+                             <li>Droptop 925 Specialty Dark</li>
+                         </ul>
+                     </div>
+
+                 </div>
+
+                 <div class="section4_3">
+                     <input type="button" value="VIEW MORE">
+                 </div>
+            </div>
+        </section>
+
+        <section id="section5">
+            <div class="section5_wrap">
+                <div class="section5_1">
+                    <p><img src="./img/title.png" alt=""></p>
+                    <p>About DropTop</p>
+                </div>
+                <div class="section5_2">
+                    <iframe width="555" height="541" src="https://www.youtube-nocookie.com/embed/QCCPIb2dNck?start=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="section5_3">
+                    <div class="section5_3_1">
+                        <ul>
+                            <li><img src="./img/content5 (4).png" alt=""></li>
+                            <li><img src="./img/content5 (6).png" alt=""></li>
+                        </ul>
+                    </div>
+                    <div class="section5_3_2">
+                        <ul>
+                            <li>
+                                <p>Master Franchise</p>
+                                <p>고객과 가맹점주, 협력사의 <br>
+                                    상생의 가치를 실현합니다.</p>
+                                <p><input type="button" value="가맹문의"></p>
+                            </li>
+                            <li><img src="./img/content5 (5).png" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section6">
+            <div class="section6_wrap">
+                <div class="section6_1">
+                        <p><img src="./img/title.png" alt=""></p>
+                        <p>Recent Article</p>
+                 </div>
+
+                 <div class="section6_2">
+                     <div>
+                         <ul>
+                             <li><img src="./img/content6 (1).png" alt=""></li>
+                             <li>‘925 캡슐커피’, ‘925 더블샷 라떼 스틱’<br>
+                                홈카페 트렌드에 매출 껑충</li>
+                             <li>Octover 26th, 2020</li>
+                         </ul>
+                     </div>
+                     <div>
+                         <ul>
+                             <li><img src="./img/content6 (2).png" alt=""></li>
+                             <li>카페 드롭탑, ‘소비자 패널 테스트’로 <br>
+                                2030 젊은 입맛 사로잡는다</li>
+                             <li>May 12th, 2020</li>
+                         </ul>
+                     </div>
+                     <div>
+                         <ul>
+                             <li><img src="./img/content6 (3).png" alt=""></li>
+                             <li>고소한 흑임자와 블랙 슈가의 조합 <br> 
+                                ‘흑임자 카페라떼’ 출시</li>
+                             <li>February 21th, 2020</li>
+                         </ul>
+                     </div>
+                 </div>
+
+                 <div class="section6_3">
+                    <input type="button" value="VIEW MORE">
+                 </div>
+            </div>
+        </section>
+
+        <section id="section7">
+            <div class="section7_wrap">
+                <div class="section7_1">
+                    <p>#FOLLOW <span>DROPTOP</span> ON INSTAGRAM</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="section8">
+        <div id="banner">
+            <div>
+                <a href="https://www.instagram.com/droptop_official/?hl=ko" target="_blank">
+                    <img src="./img/content7 (1).png"/>
+                </a>
+            </div>
+            <div>
+                <a href="https://www.instagram.com/droptop_official/?hl=ko" target="_blank">
+                    <img src="./img/content7 (2).png"/>
+                </a>
+            </div>
+            <div>
+                <a href="https://www.instagram.com/droptop_official/?hl=ko" target="_blank">
+                    <img src="./img/content7 (3).png"/>
+                </a>
+            </div>
+            <div>
+                <a href="https://www.instagram.com/droptop_official/?hl=ko" target="_blank">
+                    <img src="./img/content7 (4).png"/>
+                </a>
+            </div>
+            <div>
+                <a href="https://www.instagram.com/droptop_official/?hl=ko" target="_blank">
+                    <img src="./img/content7 (5).png"/>
+                </a>
+            </div>
+            <div>
+                <a href="https://www.instagram.com/droptop_official/?hl=ko" target="_blank">
+                    <img src="./img/content7 (6).png"/>
+                </a>
+            </div>
+            <div>
+                <a href="https://www.instagram.com/droptop_official/?hl=ko" target="_blank">
+                    <img src="./img/content7 (1).png"/>
+                </a>
+            </div>
+            <div>
+                <a href="https://www.instagram.com/droptop_official/?hl=ko" target="_blank">
+                    <img src="./img/content7 (2).png"/>
+                </a>
+            </div>
+            <div>
+                <a href="https://www.instagram.com/droptop_official/?hl=ko" target="_blank">
+                    <img src="./img/content7 (3).png"/>
+                </a>
+            </div>
+            <div>
+                <a href="https://www.instagram.com/droptop_official/?hl=ko" target="_blank">
+                    <img src="./img/content7 (4).png"/>
+                </a>
+            </div>
+            <div>
+                <a href="https://www.instagram.com/droptop_official/?hl=ko" target="_blank">
+                    <img src="./img/content7 (5).png"/>
+                </a>
+            </div>
+            <div>
+                <a href="https://www.instagram.com/droptop_official/?hl=ko" target="_blank">
+                    <img src="./img/content7 (6).png"/>
+                </a>
+            </div>
+    
+          
+        </div>
+        </section>
+
+
+        <footer>
+            <div class="footer_wrap">
+               <div class="f1">
+                   <div class="f_l">
+                        <ul>
+                            <li><a href="#"><img src="./img/footer_logo.png" alt=""></a></li>
+                            <li>
+                                서울특별시 서초구 강남대로 601 (잠원동 21-2) 8층, (주)다도글로벌/카페드롭탑 <br>
+                                Tel : (02)547-7800        사업자등록번호 : 211-88-47165         대표이사 : 임문수 <br>
+                                개인정보관리책임자 : 이병규         통신판매업번호 : 2019-서울서초-1518
+                            </li>
+                        </ul>
+                   </div>
+                   <div class="f_r">
+                        <ul>
+                            <li><a href="#">회사소개</a></li>
+                            <li><a href="#">개인정보취급방침 </a></li>
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#">본/지사안내</a></li>
+                            <li><a href="#">채용공고</a></li>
+                            <li><a href="#">시공업체등록</a></li>
+                            <li><a href="#">사이트맵</a></li>
+                        </ul>
+                    </div>
+               </div> 
+
+
+               <div class="f2">
+                   <div class="f_l">
+                        <p>Copyright ⓒ 2020 cafe droptop All Rights Reserved.</p>
+                   </div>
+                   <div class="f_r">
+                        <div><a href="#"><img src="./img/facebook.png" alt=""></a></div>
+                        <div><a href="#"><img src="./img/instagram.png" alt=""></a></div>
+                        <div><a href="#"><img src="./img/twitter.png" alt=""></a></div>
+                    </div>
+               </div> 
+            </div>
+        </footer>
+
+
+    </div>
+  
+    
+
+
+    <!-- section8 슬라이더 -->
+    <script type="text/javascript">
+        $(document).ready(function(){
+             $("#banner").slick({
+                 horizontal: true,
+                 slidesToShow: 6,
+                 slidesToScroll: 1,
+                 autoplay: true,
+                 autoplaySpeed: 3000,
+                 arrows: false,
+                 horizontalSwiping: true
+             });
+         });
+     </script> 
+</body>
+</html>

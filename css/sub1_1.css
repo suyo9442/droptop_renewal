@@ -1,0 +1,515 @@
+* {
+    padding: 0; margin: 0 auto;
+    font-family: 'square_r';
+}
+
+html ,body {
+    width: 100%; height: 100%;
+}
+#wrap {
+width: 100%; 
+/* height: 100%; */
+margin: 0 auto;
+/* position: fixed; */
+overflow: hidden;
+}
+a {text-decoration: none;}
+ul li{list-style-type: none;}
+
+/* 폰트 */
+@font-face {
+    font-family: 'square_l';
+    src: url('../font/NanumSquareL.ttf');
+}
+@font-face {
+    font-family: 'square_r';
+    src: url('../font/NanumSquareR.ttf');
+}
+@font-face {
+    font-family: 'square_b';
+    src: url('../font/NanumSquareB.ttf');
+}
+@font-face {
+    font-family: 'square_eb';
+    src: url('../font/NanumSquareEB.ttf');
+}
+
+/* 탑헤더 */
+#top {
+    width: 100%; height: 50px;
+    background-color: #0F0F0F;
+}
+.top_wrap {
+    width: 1200px; margin: 0 auto;
+    height: 50px; 
+    background-color:#0F0F0F;
+    position: relative;
+}
+.top_wrap ul {
+    position: absolute;
+    right: 20px;
+}
+.top_wrap ul li a {
+    color: #C3C3C3;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 13px; 
+}
+.top_wrap ul li {
+    display: inline-block;
+    margin-top: 22px;
+}
+.top_wrap ul li span {
+    color: #444444;
+}
+
+
+/* 헤더 */
+.top_logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.top_logo a {
+    display: block;
+    padding: 41px 0;
+}
+
+/* 네비게이션 */
+.header_container {
+    width: 1200px;
+    position: relative;
+    /* background-color: red; */
+}
+header {
+    width: 100%; margin: 0 auto;
+    height: 100px;
+    background: 
+    linear-gradient(#0F0F0F 102px,
+    #0F0F0F 20%, #0F0F0F);
+    overflow: hidden;
+    position: absolute;
+    top: 50px;
+    z-index: 9999;
+}
+nav > ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+nav {
+    width: 1000px;
+    /* overflow: hidden; */
+    /* background: white; */
+    position: absolute;
+    top: 32px;
+    left: 436px;
+}
+nav > ul > li {
+    float: left;
+    line-height: 38px;
+    margin-right: 90px;
+    position: relative;
+}
+nav > ul > li ul {
+    width: 100%;
+    position: absolute;
+    padding-top: 50px;
+}
+nav > ul > li ul li {
+    white-space: nowrap;
+}
+nav > ul li a {
+    color: white;
+    font-size: 13px;
+}
+nav > ul li ul li a {
+    color: rgb(204, 204, 204);
+}
+
+
+/* 푸터 */
+footer {
+    width: 100%; height: 260px; 
+    background-color: rgb(0, 0, 0);
+    /* margin-top: 421px; */
+}
+.footer_wrap {
+    width: 1200px; height: 260px;
+    /* outline: 1px solid red; */
+    color: #807C7C;
+}
+
+/* top */
+.f1 {
+    height: 167px;
+    border-bottom: 0.1px solid rgb(44, 44, 44);
+    padding-bottom: 24px;
+}
+.f1 > .f_l {
+    width: 40%; height: 167px;
+    float: left;
+}
+.f1 > .f_l ul li:first-child {
+    margin-top: 30px;
+}
+.f1 > .f_l ul li:last-child {
+    font-size: 12px;
+    margin-top: 30px;
+    line-height: 18px;
+}
+.f1 > .f_r {
+    width: 60%; height: 167px;
+    float: right;
+}
+.f1 > .f_r > ul {
+    text-align: end;
+    margin-top: 30px;
+}
+.f1 > .f_r > ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+.f1 > .f_r > ul li a {
+    font-size: 14px;
+    font-family: 'square_b';
+    color: #807C7C;
+}
+.f1 > .f_r > ul li:nth-child(2) a {
+    color: #928e8e;
+    font-family: 'square_eb';
+}
+
+/* bottom */
+.f2 {
+    position: relative;
+}
+.f2 > .f_l {
+    width: 40%; height: 66px;
+    float: left;
+} 
+.f2 > .f_l p {
+    font-size: 12px;
+    margin-top: 25px;
+}
+.f2 > .f_r {
+    /* width: 60%; height: 66px; */
+    top: 20px;
+    right: 0;
+    position: absolute;   
+}
+.f2 > .f_r div {
+    display: inline-block;
+    margin-left: 3px;
+}
+
+
+/* 타이틀 */
+#title {
+    width: 100%; height: 100%;
+    background-color: #1D1D1D;
+    background-image: url('../img/sub1_1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.title_wrap {
+    width: 1200px; height: 400px;
+    margin-top: 100px;
+    text-align: center;
+    /* outline: 1px solid red; */
+}
+
+.title_wrap p:nth-child(1) {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 42px;
+    padding-top: 140px;
+}
+.title_wrap p:nth-child(2) {
+    color: #fff;
+    font-family: 'square_b';
+    font-size: 20px;
+    padding-top: 18px;
+}
+ 
+
+/* 서브 네비게이션 */
+#sub_nav {
+    width: 100%; height: 100%;
+    background-color: #1D1D1D;
+}
+.sub_nav_wrap {
+    width: 1200px; height: 55px;
+    /* outline: 1px solid red; */
+}
+.sub_nav_wrap div {
+    width: 400px; height: 55px;
+    float: left;
+    /* outline: 1px solid red; */
+    text-align: center;
+}
+.sub_nav_wrap div:first-child{
+    background-color: #F3C33C;
+    color: #fff;
+}
+.sub_nav_wrap div a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    line-height: 54px;
+    display: block;
+}
+.sub_nav_wrap div:hover {
+    background-color: #F3C33C;
+}
+.sub_nav_wrap div a:hover {
+    color: #000;
+}
+
+
+/* 콘텐츠 */
+#content1 {
+    width: 100%; height: 100%;
+    margin-top: 150px;
+}
+.content1_wrap {
+    width: 1200px; height: 500px;
+    /* outline: 1px solid red; */
+}
+.content1_wrap > .left {
+    width: 46%; height: 464px;
+    /* background-color: thistle; */
+    float: left;
+    position: relative;
+}
+.content1_wrap > .right {
+    width: 54%; height: 464px;
+    /* outline: 1px solid blue; */
+    float: right;
+    margin-top: 20px;
+}
+
+.content1_wrap > .left ul li:nth-child(1) {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 42px;
+}
+.content1_wrap > .left ul li:nth-child(1) span {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 42px;
+    font-weight: 600;
+}
+.content1_wrap > .left ul li:nth-child(2) {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 42px;
+    font-weight: 800;
+    margin-top: 25px;
+}
+.content1_wrap > .left ul li:nth-child(3) {
+    font-size: 18px;
+    margin-top: 15px;
+}
+.left > img {
+    position: absolute;
+    top: 3px;
+}
+.content1_wrap > .left ul {
+    margin-left: 14px;
+}
+
+
+.right > .number {
+    width: 10%; height: 464px;
+    /* background-color: red; */
+    float: left;
+    position: relative;
+}
+.right > .text {
+    width: 90%; height: 464px;
+    float: right;
+}
+.right > .number > .square {
+    /* background-color: blue; */
+    position: absolute;
+    top: 69px;
+    left: 6px;
+    z-index: -99;
+}
+.right > .number > .square li{
+    margin-bottom: 90px;
+}
+.right > .number > .square li:last-child{
+    margin-bottom: 0px;
+}
+.right #number div {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 80px;
+    margin-top: 75px;
+    /* outline: 1px solid green; */
+}
+.right #number div:last-child {
+    margin-bottom: 0;
+}
+.right > .text > ul {
+    margin-top: 70px;
+}
+.right > .text > ul > li {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+.right > .text ul li ul li {
+    font-family: 'square_l';
+    font-size: 18px;
+    margin-top: 25px;
+}
+
+
+/* 콘텐츠2 */
+#content2 {
+    width: 100%; height: 502px;
+    background: linear-gradient(to right, #fff 40%, #1D1D1D 40%);
+}
+.content2_wrap {
+    width: 1200px; height: 502px;
+    background: #fff;
+    /* outline: 1px solid blue; */
+    margin-top: 100px;
+}
+.content2_wrap > .left {
+    width: 300px; height: 502px;
+    /* background: rgb(179, 179, 179); */
+    float: left;
+    position: relative;
+}
+.content2_wrap > .right {
+    width: 900px; height: 502px;
+    background: rgb(65, 65, 65);
+    float: right;
+}
+
+
+/* 왼쪽 */
+.content2_wrap > .left ul li:nth-child(1) {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 43px;
+}
+.content2_wrap > .left ul li:nth-child(2) {
+    font-size: 18px;
+    margin-top: 15px;
+    line-height: 26px;
+    margin-top: 30px;
+}
+.content2_wrap > .left > img {
+    position: absolute;
+    top: 3px;
+}
+.content2_wrap > .left ul {
+    margin-left: 14px;
+}
+
+/* 오른쪽 */
+.content2_wrap > .right > div {
+    width: 300px; height: 500px;
+    display: block;
+    float: left;
+    background-color: red;
+}
+.content2_wrap > .right .img1 {
+    background-image: url('../img/sub1_1\ \(2\).png');
+}
+.content2_wrap > .right .img2 {
+    background-image: url('../img/sub1_1\ \(3\).png');
+}
+.content2_wrap > .right .img3 {
+    background-image: url('../img/sub1_1\ \(1\).png');
+}
+.right .trans {
+    width: 300px; height: 500px;
+    background-color: rgba(0, 0, 0, 0.507);
+    text-align: center;
+}
+
+.right .trans ul {
+    padding: 120px 30px 120px 30px;
+}
+.right .trans ul li {
+    color: white;
+}
+.right .trans ul li:nth-child(2) {
+    font-size: 28px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    margin-top: 15px;
+}
+.right .trans ul li:nth-child(3) {
+    font-size: 13px;
+    margin-top: 30px;
+    line-height: 26px;
+    /* font-family: 'square_l'; */
+}
+
+
+/* 콘텐츠3 */
+#content3 {
+    width: 100%; height: 100%;
+}
+.content3_wrap {
+    width: 1200px; height: 495px;
+    /* outline: 1px solid red; */
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+.content3_wrap > .left {
+    width: 535px; height: 100%;
+    /* background-color: wheat; */
+    float: left;
+    position: relative;
+}
+.content3_wrap > .right {
+    width: 665px; height: 100%;
+    /* background-color: rgb(192, 192, 192); */
+    float: right;
+    position: relative;
+}
+
+/* 왼쪽 */
+.content3_wrap > .left ul li:nth-child(1) {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 42px;
+}
+.content3_wrap > .left ul li:nth-child(1) span {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 42px;
+    font-weight: 600;
+}
+.content3_wrap > .left > .vline {
+    position: absolute;
+    top: 3px;
+}
+.content3_wrap > .left ul {
+    margin-left: 14px;
+}
+.content3_wrap > .left ul li:nth-child(2) img {
+    position: absolute;
+    top: 193px;
+    left: 135px;
+}
+.content3_wrap > .left ul li:nth-child(3) img{
+    position: absolute;
+    top: 120px;
+    left: 35px;
+    z-index: -99;
+}
+.content3_wrap > .right > .text > ul li:last-child ul li {
+    line-height: 26px;
+}
