@@ -657,18 +657,10 @@ nav > ul li ul li a {
     left: 50%;
     transform: translateX(-50%);
     overflow: hidden;
-    top: 4788px;
+    top: 4794px;
 }
 #banner {
-    width: 1920px;
-    margin: 0 auto;
-    text-align: center;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    overflow: hidden;
-    /* outline: 1px solid red; */
-    /* top: 4788px; */
+    display: flex;
 }
 #banner img{
     width: 317px;
